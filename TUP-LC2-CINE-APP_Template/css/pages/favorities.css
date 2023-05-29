@@ -1,0 +1,8 @@
+/* Division de las peliculas */
+#sec_peliculas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}

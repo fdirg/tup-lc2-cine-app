@@ -6,11 +6,13 @@
     <title>TUP LC2 - TP Integrador - Cine</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/pages/index.css" />
   </head>
 
   <body>
     <header>
       <h1>
+        <img src="img/IconoCine.png" alt="Logo" />
         <!--Titulo Cabecera-->
         <span>Cartelera de Cine</span>
       </h1>
@@ -26,6 +28,7 @@
     <!-- Contenido principal de la página -->
     <main>
       <h2>Últimas Películas en Cartelera</h2>
+      <p class="agregar-p">Agregar Una Pelicula Favorita Por Codigo:</p>
       <section id="form-movie-new">
         <!--Seccion para agregar una palicula favorita por codigo-->
         <form>
@@ -45,16 +48,20 @@
       <section id="sec_peliculas">
         <!--Seccion visualizacion de peliculas-->
         <div class="contenedorPeliculas" id="contenedorPeliculas">
-          <img
-            src="https://image.tmdb.org/t/p/w500/fcFMd3HdyX7r5gtFwVnn2qr5Yhq.jpg"
-            alt="Creed III"
-          />
-          <h3>Creed III</h3>
-          <p>Codigo: 677179</p>
-          <p>Titulo original: Creed III</p>
-          <p>Idioma original: en</p>
-          <p>Año: 2023-03-01</p>
-          <a href="#">Agregar a Favoritos</a>
+          <div>
+            <img
+              src="https://image.tmdb.org/t/p/w500/fcFMd3HdyX7r5gtFwVnn2qr5Yhq.jpg"
+              alt="Creed III"
+            />
+            <h3>Creed III</h3>
+            <p><span>Codigo:</span> 677179</p>
+            <p><span>Titulo original:</span> Creed III</p>
+            <p><span>Idioma original:</span> en</p>
+            <p><span>Año:</span> 2023-03-01</p>
+          </div>
+          <div>
+            <button id="btnFavorites">Agregar a favoritos</button>
+          </div>
         </div>
       </section>
       <section id="sec_paginador_peliculas">

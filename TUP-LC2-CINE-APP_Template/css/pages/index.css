@@ -1,0 +1,78 @@
+/* Division de las peliculas */
+#sec_peliculas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Texto: "Agregar una pelicula favorita por codigo" */
+.agregar-p {
+  font-size: 0.9em;
+}
+
+/* Espaciar Titulo e informacion de la pelicula con el boton de "Agregar a favoritos" */
+.contenedorPeliculas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* Agregar a favoritos */
+.contenedorPeliculas div button {
+  background: #7f8c8d;
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  padding: 10px 0;
+  text-align: center;
+  width: 200px;
+  text-decoration: none;
+  box-shadow: 0px 3px 0px #373c3c;
+  border-radius: 2em;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.contenedorPeliculas div button:hover {
+  transform: scale(1.1);
+  box-shadow: -1px 5px 0px #373c3c;
+}
+
+/* Botones "Anterior" y "Siguiente" */
+#sec_paginador_peliculas {
+  width: 100%;
+}
+
+.paginacion {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1.2em;
+  padding: 1em 0;
+}
+.paginacion button {
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 3.5em;
+  padding: 0 2em;
+  width: 200px;
+  background-color: #241744;
+  color: #fff;
+  border-radius: 2em;
+  font-family: "Montserrat";
+  font-weight: 600;
+  transition: 0.3s ease all;
+}
+.paginacion button:hover {
+  background-color: var(--color-back-active);
+}
